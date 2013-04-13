@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "envloader",
   "description": "Load a .env file into process.env for when you can't use foreman",
   "author": "Tom Clarkson <tom@orangeguava.com> (http://tqclarkson.com)",

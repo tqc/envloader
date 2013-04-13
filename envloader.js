@@ -1,10 +1,11 @@
 (function() {
 
     exports.load = function() {
+        var path = require('path').dirname(require.main.filename);
         var fs = require("fs");
-        if (fs.existsSync(".env")) {
+        if (fs.existsSync(path+"/.env")) {
 
-            var fd = fs.openSync(".env", "r");
+            var fd = fs.openSync(path+"/.env", "r");
 
             var content = fs.readSync(fd, 4096, 0, "utf-8")[0];
 
