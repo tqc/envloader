@@ -19,6 +19,6 @@
                 process.env[line.substr(0, eq)] = line.substr(eq + 1);
             }
         }
-    }
+    };
 
 })();
