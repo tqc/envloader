@@ -11,8 +11,7 @@
         "url": "https://github.com/tqc/envloader/issues"
     },
     "scripts": {
-        "test": "eslint . && mocha",
-        "posttest": "publish"
+        "test": "eslint . && mocha"
     },
     "main": "./envloader",
     "dependencies": {},
@@ -20,7 +19,6 @@
         "babel-eslint": "*",
         "eslint": "^1.0.0",
         "eslint-config-defaults": "^3.1.0",
-        "publish": "^0.5.0",
         "chai": "*",
         "mocha": "*"
     },

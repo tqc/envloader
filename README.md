@@ -11,4 +11,10 @@ Loads a .env file into process.env for when you can't use foreman
 
 ##Usage
 
+To load ./.env
+
     require("envloader").load();
+
+To load ../.env 
+
+    require("envloader").load("..");

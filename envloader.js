@@ -1,13 +1,11 @@
 (function() {
 
-    exports.load = function() {
-        var path = require('path').dirname(require.main.filename);
+    exports.load = function(relPath) {
+        var path = require('path');
         var fs = require("fs");
-        if (fs.existsSync(path + "/.env")) {
-
-            var fd = fs.openSync(path + "/.env", "r");
-
-            var content = fs.readSync(fd, 4096, 0, "utf-8")[0];
+        var envFilePath = path.resolve(path.dirname(require.main.filename), relPath || ".", ".env");
+        if (fs.existsSync(envFilePath)) {
+            var content = fs.readFileSync(envFilePath, "utf-8");
 
             var lines = content.split(/\n|\r/);
 
